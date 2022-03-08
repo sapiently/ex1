@@ -1,10 +1,12 @@
 import React from "react";
-import Video from "../video/video";
-function VideoList(props){
+import { Link } from "react-router-dom";
+import Video from "../video/Video";
+import './videolist.css';
+function VideoList({videoItems,onVideoClick,display,search}){
     return(
-        <ul>
+        <ul className="videolist">
             {
-                props.videoItems.map(videoItem=>(<Video videoItem={videoItem} key={videoItem.id}/>))
+                videoItems.map(videoItem=>(<Link to='/watch'><Video videoItem={videoItem} key={videoItem.etag} onVideoClick={onVideoClick} display={display} search={search}/></Link>))
             
 }
         </ul>

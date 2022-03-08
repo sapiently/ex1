@@ -1,0 +1,5 @@
+.videolist{display: flex; flex-wrap: wrap;}
+
+.container .list-v .video{
+    flex-direction: column;
+}

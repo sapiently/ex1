@@ -1,0 +1,37 @@
+.videoContainer{
+    width: 20%;
+    padding: 0.2em;
+    border: 1px solid #c0c0c0;
+}
+.video{
+    width: 100%;
+    height: 100%;
+    border: 1px solid lightgray;
+    cursor: pointer;
+    transition: transform 250ms ease-in;
+    transition: all 0.2s ease-in;
+    display: flex;
+    flex-direction: row;
+}
+.video:hover{
+    transform: scale(1.1);
+    box-shadow: 3px 3px 5px 0px rgba(191, 191, 191, 0.53);
+}
+
+.thumimg{width: 100%;}
+.titledate{text-align: left; padding: 1em; display: flex;}
+
+.titledate .channelImg{width: 36px; height: 36px; border-radius: 50%; overflow: hidden; flex: 0 0 36px;}
+.titledate .channelImg img{width: 36px; height: 36px;}
+
+.title{font-size: 14px;}
+.channelTitle{font-size: 11px;}
+
+.container.list-v{flex: 1 1 20%;}
+.container.list-v{flex: 1 1 100%;}
+
+.containeer.lish-h .thumimg{width: 30%;}
+
+
+
+.search>a{width: 75%; margin: auto; display: block;}
